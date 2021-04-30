@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include kalp *.css
+recursive-include kalp *.csv
+recursive-include kalp *.html
+recursive-include kalp *.ico
+recursive-include kalp *.js
+recursive-include kalp *.json
+recursive-include kalp *.md
+recursive-include kalp *.png
+recursive-include kalp *.py
+recursive-include kalp *.svg
+recursive-include kalp *.txt
+recursive-exclude kalp *.pyc

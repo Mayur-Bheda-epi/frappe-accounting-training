@@ -1,0 +1,97 @@
+{
+ "creation": "2021-04-30 10:25:19.378188",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier_name",
+  "group",
+  "country",
+  "supplier_type",
+  "tax_id",
+  "pan_no",
+  "section_break_7"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "supplier_name",
+   "fieldtype": "Text",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Supplier Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Select",
+   "label": "Group",
+   "options": "Distributor\nFarmer\nManufacture",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier_type",
+   "fieldtype": "Text",
+   "label": "Supplier Type",
+   "options": "Company\nPartnership Firm\nLLP"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Text",
+   "label": "Tax ID"
+  },
+  {
+   "fieldname": "pan_no",
+   "fieldtype": "Text",
+   "label": "PAN No"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2021-04-30 13:04:27.670436",
+ "modified_by": "Administrator",
+ "module": "Kalp",
+ "name": "Supplier",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
