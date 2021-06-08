@@ -4,11 +4,14 @@
 from __future__ import unicode_literals
 import frappe
 
+#this is method is the Main method for executing Report
 def execute(filters=None):
+	#methods to fetch the columns & data and returning same 
 	columns= get_columns()
 	data=get_filtered_data(filters)
 	return columns, data
 
+# Method call with filtered Data as parameter bydefault it would be none
 def get_filtered_data(filters=None):
 	if filters:
 		create_filter = []
@@ -37,6 +40,7 @@ def get_filtered_data(filters=None):
 	data = frappe.db.sql(query, as_dict=1)
 	return data
 
+#Method to fetch the cloumn details from the table and returning array
 def get_columns():
 	return [
 		{
