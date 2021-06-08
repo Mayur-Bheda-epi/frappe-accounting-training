@@ -1,4 +1,5 @@
 {
+ "autoname": "field:supplier_name",
  "creation": "2021-04-30 10:25:19.378188",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -10,19 +11,26 @@
   "supplier_type",
   "tax_id",
   "pan_no",
-  "section_break_7"
+  "section_break_7",
+  "address",
+  "balance",
+  "account_manager",
+  "gst_category",
+  "accountnumber",
+  "opening_date"
  ],
  "fields": [
   {
    "allow_in_quick_entry": 1,
    "fieldname": "supplier_name",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "in_global_search": 1,
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
    "label": "Supplier Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "group",
@@ -32,34 +40,66 @@
    "reqd": 1
   },
   {
+   "bold": 1,
+   "default": "India",
    "fieldname": "country",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Country",
-   "options": "country",
+   "options": "India",
    "reqd": 1
   },
   {
    "fieldname": "supplier_type",
-   "fieldtype": "Text",
+   "fieldtype": "Select",
    "label": "Supplier Type",
    "options": "Company\nPartnership Firm\nLLP"
   },
   {
    "fieldname": "tax_id",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Tax ID"
   },
   {
    "fieldname": "pan_no",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "PAN No"
   },
   {
    "fieldname": "section_break_7",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Data",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "account_manager",
+   "fieldtype": "Data",
+   "label": "Account Manager"
+  },
+  {
+   "fieldname": "gst_category",
+   "fieldtype": "Data",
+   "label": "GST Category"
+  },
+  {
+   "fieldname": "accountnumber",
+   "fieldtype": "Data",
+   "label": "AccountNumber"
+  },
+  {
+   "fieldname": "opening_date",
+   "fieldtype": "Date",
+   "label": "Opening Date"
   }
  ],
- "modified": "2021-04-30 13:04:27.670436",
+ "modified": "2021-05-05 10:46:58.531347",
  "modified_by": "Administrator",
  "module": "Kalp",
  "name": "Supplier",

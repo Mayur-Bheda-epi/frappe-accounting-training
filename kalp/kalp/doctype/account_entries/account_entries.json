@@ -1,0 +1,63 @@
+{
+ "creation": "2021-05-10 10:00:13.211136",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "account",
+  "party",
+  "party_type",
+  "debit",
+  "credit",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "account",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Account"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Party"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Party Type"
+  },
+  {
+   "fieldname": "debit",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Debit"
+  },
+  {
+   "fieldname": "credit",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Credit"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-05-10 10:00:13.211136",
+ "modified_by": "Administrator",
+ "module": "Kalp",
+ "name": "Account Entries",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

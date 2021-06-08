@@ -1,0 +1,99 @@
+{
+ "autoname": "PE.#####",
+ "creation": "2021-05-05 19:43:36.745872",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trancaction_id",
+  "type",
+  "name1",
+  "paid_from_account",
+  "section_break_5",
+  "payment_date",
+  "invoice_number",
+  "payment_type",
+  "paid_to_account",
+  "amount",
+  "payment_mode"
+ ],
+ "fields": [
+  {
+   "fieldname": "trancaction_id",
+   "fieldtype": "Data",
+   "label": "Trancaction Id"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "paid_from_account",
+   "fieldtype": "Data",
+   "label": "Paid From Account"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "label": "Payment Date"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Data",
+   "label": "Payment Type"
+  },
+  {
+   "fieldname": "paid_to_account",
+   "fieldtype": "Data",
+   "label": "Paid To Account"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Data",
+   "label": "Payment Mode"
+  }
+ ],
+ "modified": "2021-05-07 19:40:40.774433",
+ "modified_by": "Administrator",
+ "module": "Kalp",
+ "name": "Payment Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

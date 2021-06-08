@@ -1,0 +1,91 @@
+{
+ "creation": "2021-05-05 18:34:06.374766",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "entry_id",
+  "section_break_5",
+  "total_credit",
+  "column_break_4",
+  "total_debit",
+  "difference",
+  "column_break_7",
+  "created_at",
+  "details_section",
+  "entries"
+ ],
+ "fields": [
+  {
+   "fieldname": "total_credit",
+   "fieldtype": "Data",
+   "label": "Total Credit"
+  },
+  {
+   "fieldname": "total_debit",
+   "fieldtype": "Data",
+   "label": "Total Debit"
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Datetime",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "difference",
+   "fieldtype": "Data",
+   "label": "Difference"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "entry_id",
+   "fieldtype": "Data",
+   "label": "Entry Id"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "entries",
+   "fieldtype": "Table",
+   "label": "Entries",
+   "options": "Account Entries"
+  }
+ ],
+ "modified": "2021-05-10 10:44:42.060554",
+ "modified_by": "Administrator",
+ "module": "Kalp",
+ "name": "Journal Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

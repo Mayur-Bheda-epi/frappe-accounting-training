@@ -1,0 +1,76 @@
+{
+ "autoname": "hash",
+ "creation": "2021-05-05 15:02:51.004668",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "column_break_2",
+  "available_qty",
+  "qty",
+  "column_break_4",
+  "mrp",
+  "column_break_6",
+  "cost_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product",
+   "options": "Product"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fetch_from": "product.mrp",
+   "fieldname": "mrp",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MRP"
+  },
+  {
+   "fetch_from": "product.cost",
+   "fieldname": "cost_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cost Price"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "product.opening_stock",
+   "fieldname": "available_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Available Qty"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-05-11 10:16:00.956815",
+ "modified_by": "Administrator",
+ "module": "Kalp",
+ "name": "Purchase_Product",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

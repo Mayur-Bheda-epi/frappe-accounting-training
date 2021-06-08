@@ -1,0 +1,185 @@
+{
+ "autoname": "PI.#####",
+ "creation": "2021-05-04 17:30:10.314320",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice_number",
+  "invoice_date",
+  "column_break_3",
+  "order_number",
+  "purchaser_name",
+  "address",
+  "section_break_7",
+  "section_break_9",
+  "total_quantity",
+  "column_break_10",
+  "grand_total",
+  "section_break_11",
+  "status",
+  "column_break_12",
+  "payment_status",
+  "item_purchase_detail_section",
+  "payment_date",
+  "section_break_14",
+  "type",
+  "debit_from",
+  "column_break_21",
+  "account_details",
+  "assets_account",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "label": "Invoice Number"
+  },
+  {
+   "fieldname": "order_number",
+   "fieldtype": "Link",
+   "label": "Order Number",
+   "options": "Purchase Order"
+  },
+  {
+   "fetch_from": "order_number.supplier_name",
+   "fieldname": "purchaser_name",
+   "fieldtype": "Data",
+   "label": "Purchaser Name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nPending"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Paid\nUnpaid"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Date",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "label": "Payment Date"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Payment Mode",
+   "options": "Cheque\nCash\nDD"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Item Details"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_quantity",
+   "fieldtype": "Int",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Float",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "account_details",
+   "fieldtype": "Link",
+   "label": "Account Details",
+   "options": "Account"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Purchase Invoice",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "account_details.number",
+   "fieldname": "assets_account",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_purchase_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "company.account",
+   "fieldname": "debit_from",
+   "fieldtype": "Link",
+   "label": "Debit From",
+   "options": "Company"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-05-11 10:26:11.132001",
+ "modified_by": "Administrator",
+ "module": "Kalp",
+ "name": "Purchase Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
