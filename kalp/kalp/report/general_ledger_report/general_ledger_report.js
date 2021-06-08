@@ -1,7 +1,7 @@
 // Copyright (c) 2016, mayur and contributors
 // For license information, please see license.txt
 /* eslint-disable */
-
+//Filters for adding viewing report
 frappe.query_reports["General Ledger Report"] = {
 	"filters": [
 		{
